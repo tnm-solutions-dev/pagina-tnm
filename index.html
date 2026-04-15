@@ -20,7 +20,10 @@
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">TNM</div>
-            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <div class="nav-links">
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#clientes" class="nav-link">Clientes</a>
+            </div>
         </div>
     </nav>
 
@@ -61,7 +64,7 @@
                 <article class="project-card" data-project="0">
                     <div class="project-visual">
                         <div class="project-image">
-                            <img src="imagenes/mMaster-1.png" alt="MenuMaster">
+                            <img src="imagenes/mMaster/mMaster-1.png" alt="MenuMaster">
                         </div>
                         <div class="project-overlay">
                             <span class="project-overlay-text">Ver detalles</span>
@@ -90,7 +93,7 @@
                 <article class="project-card" data-project="1">
                     <div class="project-visual">
                         <div class="project-image">
-                            <img src="imagenes/viandify-1.png" alt="Viandify">
+                            <img src="imagenes/Viandify/viandify-1.png" alt="Viandify">
                         </div>
                         <div class="project-overlay">
                             <span class="project-overlay-text">Ver detalles</span>
@@ -120,7 +123,7 @@
                 <article class="project-card" data-project="2">
                     <div class="project-visual">
                         <div class="project-image">
-                            <img src="imagenes/Vitrino-1.png" alt="Vitrino">
+                            <img src="imagenes/Vitrino/Vitrino-1.png" alt="Vitrino">
                         </div>
                         <div class="project-overlay">
                             <span class="project-overlay-text">Ver detalles</span>
@@ -146,10 +149,10 @@
                     </div>
                 </article>
                 <!-- Project 4 -->
-                <article class="project-card" data-project="3">
+                <article class="project-card" data-project="3" id="vendora">
                     <div class="project-visual">
                         <div class="project-image">
-                                <img src="imagenes/Vendora (1).png" alt="Vendora">
+                            <img src="imagenes/Vendora/Vendora (1).png" alt="Vendora">
                         </div>
                         <div class="project-overlay">
                             <span class="project-overlay-text">Ver detalles</span>
@@ -174,6 +177,66 @@
                         </div>
                     </div>
                 </article>
+                <!-- Project 5 -->
+                <article class="project-card" data-project="4">
+                    <div class="project-visual">
+                        <div class="project-image">
+                            <img src="imagenes/Vendora-SCP/Vendora-SCP (2).png" alt="Vendora Stock Control Plus">
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-overlay-text">Ver detalles</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">PWA · Mobile-first</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3 class="project-title">Vendora — Stock Control Plus</h3>
+                        <p class="project-description">
+                            PWA mobile-first para gestión de stock, ventas y pedidos en tiempo real.
+                            Sincronizable con <a href="#vendora">Vendora</a> para gestión integral de stock, funciona
+                            offline con
+                            sincronización automática e incluye dashboard de KPIs, alertas de stock,
+                            carrito de venta rápida e importación de productos por CSV/Excel.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Firebase</span>
+                            <span>TailwindCSS</span>
+                            <span>PWA</span>
+                            <span>Firestore</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 6 -->
+                <article class="project-card" data-project="5">
+                    <div class="project-visual">
+                        <div class="project-image">
+                            <img src="imagenes/Gestium/Gestium (4).png" alt="Gestium">
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-overlay-text">Ver detalles</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Web SPA · Mobile-first</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3 class="project-title">Gestium</h3>
+                        <p class="project-description">
+                            <b>Gestium</b> es un sistema integral de gestión empresarial web que unifica pedidos, inventario,
+                            cuentas corrientes y caja en una sola plataforma. Ideal para pequeñas y medianas empresas
+                            que necesitan control total de sus operaciones comerciales en tiempo real.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>Firebase</span>
+                            <span>TailwindCSS</span>
+                            <span>Firestore</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -192,7 +255,9 @@
                 <div class="modal-header">
                     <h2 class="modal-title" id="modalTitle"></h2>
                     <p class="modal-description" id="modalDescription"></p>
-                    <a href="mailto:solutions.tnm.dev@gmail.com" class="modal-info-btn" style="display:inline-block;margin-top:16px;padding:10px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">Más información</a>
+                    <a href="mailto:solutions.tnm.dev@gmail.com" class="modal-info-btn"
+                        style="display:inline-block;margin-top:16px;padding:10px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">Más
+                        información</a>
                 </div>
 
                 <div class="modal-gallery">
@@ -221,6 +286,20 @@
         </div>
     </div>
 
+    <!-- Clients Section -->
+    <section class="clients" id="clientes">
+        <div class="clients-container">
+            <div class="section-header">
+                <h2 class="section-title">Clientes que confían en nosotros</h2>
+                <p class="section-subtitle">Empresas y emprendimientos que utilizan nuestras soluciones</p>
+            </div>
+
+            <div class="clients-grid" id="clientsGrid">
+                <!-- Los clientes se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -242,11 +321,11 @@
                 fullTitle: "MenuMaster — Sistema de Pedidos en Línea",
                 description: "Sistema completo de pedidos en línea que digitaliza el proceso de compra en cantinas y establecimientos de comida. Los clientes pueden explorar el menú, realizar pedidos y pagar de forma digital, mientras que los administradores gestionan inventario, procesan pedidos y reciben notificaciones en tiempo real.",
                 images: [
-                    "imagenes/mMaster-1.png",
-                    "imagenes/mMaster-2.png",
-                    "imagenes/mMaster-3.png",
-                    "imagenes/mMaster-4.png",
-                    "imagenes/mMaster-5.png"
+                    "imagenes/mMaster/mMaster-1.png",
+                    "imagenes/mMaster/mMaster-2.png",
+                    "imagenes/mMaster/mMaster-3.png",
+                    "imagenes/mMaster/mMaster-4.png",
+                    "imagenes/mMaster/mMaster-5.png"
                 ]
             },
             {
@@ -254,12 +333,12 @@
                 fullTitle: "Viandify — Gestión de Catering Empresarial",
                 description: "<strong>Viandify</strong> es una aplicación web progresiva (PWA) para la gestión de catering empresarial que moderniza y optimiza los pedidos de almuerzos en empresas. Elimina la desorganización y centraliza los pedidos en tiempo real, permite establecer límites horarios automáticos, y facilita la confirmación de entregas sin credenciales. Cuenta con panel de administración para configurar menús, reportes y usuarios; panel de empleados con calendario visual y carrusel de platos; y sistema público de confirmación de entregas por DNI. Incluye integración opcional con MercadoPago, almacenamiento de imágenes en Cloudflare R2, arquitectura serverless escalable y diseño responsive para móviles y escritorio.",
                 images: [
-                    "imagenes/viandify-1.png",
-                    "imagenes/viandify-2.png",
-                    "imagenes/viandify-3.png",
-                    "imagenes/viandify-4.png",
-                    "imagenes/viandify-5.png",
-                    "imagenes/viandify-6.png"
+                    "imagenes/Viandify/viandify-1.png",
+                    "imagenes/Viandify/viandify-2.png",
+                    "imagenes/Viandify/viandify-3.png",
+                    "imagenes/Viandify/viandify-4.png",
+                    "imagenes/Viandify/viandify-5.png",
+                    "imagenes/Viandify/viandify-6.png"
                 ]
             },
             {
@@ -267,10 +346,10 @@
                 fullTitle: "Vitrino — Catalogo Digital Moderno",
                 description: "<strong>Vitrino</strong> es una plataforma web integral para negocios que necesitan mostrar productos de forma profesional y atractiva en internet. Resuelve la falta de presencia digital profesional, elimina la complejidad técnica, optimiza y almacena imágenes en la nube, y permite actualizar productos, precios y categorías en tiempo real desde cualquier dispositivo. Incluye módulos para exhibición, gestión y administración, facilitando el comercio digital sin necesidad de desarrolladores ni sistemas costosos.",
                 images: [
-                    "imagenes/Vitrino-1.png",
-                    "imagenes/Vitrino-2.png",
-                    "imagenes/Vitrino-3.png",
-                    "imagenes/Vitrino-4.png"
+                    "imagenes/Vitrino/Vitrino-1.png",
+                    "imagenes/Vitrino/Vitrino-2.png",
+                    "imagenes/Vitrino/Vitrino-3.png",
+                    "imagenes/Vitrino/Vitrino-4.png"
 
                 ]
             },
@@ -279,18 +358,47 @@
                 fullTitle: "Vendora — E-commerce completo",
                 description: "<strong>Vendora</strong> es una solución integral de comercio electrónico desarrollada desde cero para competir con plataformas como Tienda Nube, Shopify o Emprentienda, pero con una ventaja fundamental: control total del código y bajas comisiones por venta*.<br><small style='color:#888;display:block;margin-top:8px;'>* Las comisiones aplicadas corresponden únicamente a los servicios de pago integrados (Mercado Pago, Ualá, MODO).</small>",
                 images: [
-                    "imagenes/Vendora (1).png",
-                    "imagenes/Vendora (2).png",
-                    "imagenes/Vendora (3).png",
-                    "imagenes/Vendora (4).png",
-                    "imagenes/Vendora (5).png",
-                    "imagenes/Vendora (6).png",
-                    "imagenes/Vendora (7).png",
-                    "imagenes/Vendora (8).png",
-                    "imagenes/Vendora (9).png",
-                    "imagenes/Vendora (10).png"
+                    "imagenes/Vendora/Vendora (1).png",
+                    "imagenes/Vendora/Vendora (2).png",
+                    "imagenes/Vendora/Vendora (3).png",
+                    "imagenes/Vendora/Vendora (4).png",
+                    "imagenes/Vendora/Vendora (5).png",
+                    "imagenes/Vendora/Vendora (6).png",
+                    "imagenes/Vendora/Vendora (7).png",
+                    "imagenes/Vendora/Vendora (8).png",
+                    "imagenes/Vendora/Vendora (9).png",
+                    "imagenes/Vendora/Vendora (10).png"
                 ]
-            }
+            },
+            {
+                title: "Vendora — Stock Control Plus",
+                fullTitle: "Vendora — Stock Control Plus · PWA de gestión",
+                description: "<strong>Vendora Stock Control Plus</strong> es una PWA mobile-first para gestión de stock, ventas y pedidos en tiempo real. Comparte Firebase Auth y colecciones Firestore con el panel admin de Vendora, lo que permite operar ambos sistemas desde la misma base de datos. Funciona completamente offline gracias al Service Worker y la persistencia IndexedDB de Firebase, sincronizando automáticamente al recuperar conexión. Incluye un dashboard con KPIs en vivo, alertas de stock bajo, módulo de venta rápida con carrito y checkout, gestión de pedidos con cambio de estado, e importación masiva de productos por CSV o Excel.",
+                images: [
+                    "imagenes/Vendora-SCP/Vendora-SCP (1).png",
+                    "imagenes/Vendora-SCP/Vendora-SCP (2).png",
+                    "imagenes/Vendora-SCP/Vendora-SCP (3).png",
+                    "imagenes/Vendora-SCP/Vendora-SCP (4).png",
+                    "imagenes/Vendora-SCP/Vendora-SCP (5).png",
+                    "imagenes/Vendora-SCP/Vendora-SCP (6).png"
+                ]
+            },
+            {
+                title: "Gestium — Sistema de Gestión Empresarial",
+                fullTitle: "Gestium — Sistema de Gestión Empresarial · Plataforma web integral para PyMEs",
+                description: "<strong>Gestium</strong> es una aplicación web SPA mobile-first para gestión empresarial completa. Unifica pedidos, inventario, cuentas corrientes con cheques, caja y contabilidad en una sola plataforma con Firebase (Auth + Firestore). Incluye gestión de pedidos con múltiples ítems y atributos configurables, control de stock con alertas de faltantes, manejo de cuentas corrientes con seguimiento de cheques (pendiente/cobrado/rechazado), sistema de caja con cierre mensual automatizado, registro de compras con proveedores, histórico contable con períodos cerrados, y exportación de reportes en PDF. Características destacadas: modo privacidad para ocultar montos, sistema multi-atributo personalizable para productos, sincronización en tiempo real, y generación automática de estados de cuenta y balances.",
+                images: [
+                    "imagenes/Gestium/Gestium (1).png",
+                    "imagenes/Gestium/Gestium (2).png",
+                    "imagenes/Gestium/Gestium (3).png",
+                    "imagenes/Gestium/Gestium (4).png",
+                    "imagenes/Gestium/Gestium (5).png",
+                    "imagenes/Gestium/Gestium (6).png",
+                    "imagenes/Gestium/Gestium (7).png",
+                    "imagenes/Gestium/Gestium (8).png",
+                    "imagenes/Gestium/Gestium (9).png"
+                ]
+            }            
         ];
 
         // Smooth scroll
@@ -351,12 +459,12 @@
             // Technologies ocultas: no manipular techContainer
 
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
         }
 
         function closeModal() {
             modal.classList.remove('active');
-            document.body.style.overflow = '';
+            document.body.classList.remove('modal-open');
         }
 
         function showSlide(n) {
@@ -413,9 +521,106 @@
         document.querySelectorAll('.project-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(40px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            card.style.transition = 'opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)';
             observer.observe(card);
         });
+
+        // Clients data - FÁCIL DE MANTENER
+        // Agrega aquí tus clientes: nombre, sistemas que usa, logo (opcional)
+        const clientsData = [
+            {
+                nombre: "MIT ESTAMPADOS",
+                sistemas: [
+                    { nombre: "Vendora" ,url:"https://mit-estampados.vercel.app/"},
+                    { nombre: "Gestium" }
+                ],
+                logo: "imagenes/Clientes/logoMit.png ",  // O: "imagenes/logo-cliente-1.png"
+                descripcion: "Estampados y Sublimaciones"
+            }/*
+            {
+                nombre: "Nombre del Cliente 2",
+                sistema: "Viandify",
+                logo: "C2",
+                descripcion: "Descripción o rubro del negocio"
+            },
+            {
+                nombre: "Nombre del Cliente 3",
+                sistema: "Vitrino",
+                logo: "C3",
+                descripcion: "Descripción o rubro del negocio"
+            },
+            {
+                nombre: "Nombre del Cliente 4",
+                sistema: "Vendora",
+                logo: "C4",
+                descripcion: "Descripción o rubro del negocio"
+            }*/
+            // Agrega más clientes copiando el formato anterior
+        ];
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function getClientSystems(client) {
+            if (Array.isArray(client.sistemas) && client.sistemas.length > 0) {
+                return client.sistemas;
+            }
+
+            if (typeof client.sistema === 'string' && client.sistema.trim()) {
+                return client.sistema
+                    .split(',')
+                    .map(systemName => ({ nombre: systemName.trim() }))
+                    .filter(system => system.nombre);
+            }
+
+            return [];
+        }
+
+        function renderSystemBadge(system) {
+            const systemName = escapeHtml(system.nombre || '');
+            const systemUrl = system.url || system.link || '';
+
+            if (systemUrl) {
+                return `<a class="system-badge system-badge-link" href="${escapeHtml(systemUrl)}" target="_blank" rel="noopener noreferrer">${systemName}</a>`;
+            }
+
+            return `<span class="system-badge">${systemName}</span>`;
+        }
+
+        // Renderizar clientes
+        function renderClients() {
+            const clientsGrid = document.getElementById('clientsGrid');
+            clientsGrid.innerHTML = clientsData.map((client, index) => `
+                <div class="client-card" style="opacity: 0; transform: translateY(40px); transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);">
+                    <div class="client-logo">
+                        ${client.logo.startsWith('imagenes/') 
+                            ? `<img src="${client.logo}" alt="${escapeHtml(client.nombre)}">` 
+                            : `<div class="client-logo-placeholder">${escapeHtml(client.logo)}</div>`}
+                    </div>
+                    <div class="client-content">
+                        <h3 class="client-name">${escapeHtml(client.nombre)}</h3>
+                        <p class="client-system">
+                            ${getClientSystems(client).map(renderSystemBadge).join('')}
+                        </p>
+                        <p class="client-description">${escapeHtml(client.descripcion)}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Animar los clientes cuando entran en vista
+            document.querySelectorAll('.client-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // Inicializar clientes
+        renderClients();
     </script>
 </body>
 
